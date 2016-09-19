@@ -28,7 +28,7 @@ init(_) ->
                                    ]),
   HttpArgs = [
               http, 10,
-              [{port, 8080}],
+              [{port, application:get_env(balance, port, 8080)}],
               [{env, [{dispatch, Dispatch}]}, {fun onrequest/1}]
              ],
   Http = #{

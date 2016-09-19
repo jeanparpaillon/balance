@@ -7,12 +7,16 @@
   {mod, {balance, []}},
   {modules, []},
   {registered, []},
-  {applications, 
-   [ 
-     kernel,
-     stdlib,
-     inets,
-     cowboy
+  {applications,
+   [
+    kernel,
+    stdlib,
+    inets,
+    cowboy,
+    jsx
    ]},
-  {env, []}
+  {env, [
+         {port, 8080},
+         {server, "Generic balanced server"}
+        ]}
  ]}.

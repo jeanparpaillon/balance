@@ -5,7 +5,8 @@
          to_json/2]).
 
 init(Req, _) ->
-  {cowboy_rest, Req, ok}.
+  Req2 = cowboy_req:set_resp_header(<<"server">>, application:get_env(balance, server, <<"balance">>), Req),
+  {cowboy_rest, Req2, ok}.
 
 content_types_provided(Req, S) ->
   {[
