@@ -1,0 +1,17 @@
+%%-*- mode: erlang -*-
+{application, balance,
+ [
+  {id, "git"},
+  {vsn, "0.1"},
+  {description, "balance"},
+  {mod, {balance, []}},
+  {modules, []},
+  {registered, []},
+  {applications, 
+   [ 
+	 kernel,
+	 stdlib,
+	 inets
+   ]},
+  {env, []}
+ ]}.
