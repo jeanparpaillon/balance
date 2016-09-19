@@ -1,3 +1,6 @@
 *~
 *.beam
 *.app
+/deps
+/.erlang.mk
+*.d

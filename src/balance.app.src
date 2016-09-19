@@ -9,9 +9,10 @@
   {registered, []},
   {applications, 
    [ 
-	 kernel,
-	 stdlib,
-	 inets
+     kernel,
+     stdlib,
+     inets,
+     cowboy
    ]},
   {env, []}
  ]}.
